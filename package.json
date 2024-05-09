@@ -1,7 +1,6 @@
 {
   "name": "route-handler",
   "module": "index.ts",
-  "version": "0.2.0",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
