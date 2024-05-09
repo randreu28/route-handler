@@ -28,4 +28,4 @@ async function main(baseRoute: string) {
   console.log(`Server running on port ${server.port}`);
 }
 
-main(process.argv.at(2) || ".");
+export default main(process.argv.at(2) || ".");
