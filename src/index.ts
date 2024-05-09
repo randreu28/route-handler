@@ -1,5 +1,3 @@
-import { serve } from "bun";
-
 type Module = {
   GET?: (req: Request) => Promise<Response>;
   PUT?: (req: Request) => Promise<Response>;
@@ -8,7 +6,7 @@ type Module = {
 };
 
 async function main(baseRoute: string) {
-  const server = serve({
+  const server = Bun.serve({
     async fetch(req) {
       const url = new URL(req.url);
       const path = url.pathname;
